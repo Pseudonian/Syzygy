@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        There's stuff here. Maybe. Maybe not. Coming Not Soon!
+        <script src="inventory.js"></script>
+        <script src="main.js"></script>
+        <script src="variables.js"></script>
+        <script src="enemyStats.js"></script>
+        <script src="format.js"></script>
+        <script src="upgrades.js"></script>
+    </head>
+    <main>
+        <div id="upperUI">
+            <div class="statBox" id="playerStatBox">
+                <p id="playerName">Platonic's Stats</p>
+                <p class="statName">Damage: <span class="statValue" id="damageEffectivePlayer" style="color: red">4</span></p>
+                <p class="statName">Strength: <span class="statValue" id="strengthEffectivePlayer" style="color: orange">1</span></p>
+                <p class="statName">Health: <span class="statValue" id="healthEffectivePlayer" style="color: greenyellow">999,999,999</span></p>
+                <p class="statName">Defense: <span class="statValue" id="defenseEffectivePlayer" style="color: green">0</span></p>
+                <p class="statName">Resistance: <span class="statValue" id="resistanceEffectivePlayer" style="color: orchid">0</span></p>
+                <p class="statName">Crit Chance: <span class="statValue" id="cchanceEffectivePlayer" style="color: whitesmoke">1%</span></p>
+                <p class="statName">Crit Damage [+%]: <span class="statValue" id="cdamageEffectivePlayer" style="color: whitesmoke">+10%</span></p>
+                <p class="statName">EXP Earned: <span class="statValue" id="playerEXP" style="color: whitesmoke">+10%</span></p>
+                <p class="statName">Coin Purse: <span class="statValue" id="playerCoin" style="color: whitesmoke">+10%</span></p>
+            </div>
+            <div class="statBox" id="enemyStatBox">
+                <p id="enemyName">ANT GOD's Stats</p>
+                <p class="statName">Damage: <span class="statValue" id="damageEffectiveEnemy" style="color: red">499</span></p>
+                <p class="statName">Strength: <span class="statValue" id="strengthEffectiveEnemy" style="color: orange">499</span></p>
+                <p class="statName">Health: <span class="statValue" id="healthEffectiveEnemy" style="color: greenyellow">999,999</span></p>
+                <p class="statName">Defense: <span class="statValue" id="defenseEffectiveEnemy" style="color: green">0</span></p>
+                <p class="statName">Resistance: <span class="statValue" id="resistanceEffectiveEnemy" style="color: orchid">0</span></p>
+                <p class="statName">Crit Chance: <span class="statValue" id="cchanceEffectiveEnemy" style="color: whitesmoke">40%</span></p>
+                <p class="statName">Crit Damage: <span class="statValue" id="cdamageEffectiveEnemy" style="color: whitesmoke">+200%</span></p>
+                <p class="statName">EXP Given: <span class="statValue" id="expEffectiveEnemy" style="color: whitesmoke">+200%</span></p>
+                <p class="statName">Coin Given: <span class="statValue" id="coinEffectiveEnemy" style="color: whitesmoke">+200%</span></p>
+            </div>
+        </div>
+        <div id="midUI">
+            <table id="coinUpgradeTable">
+                <tr>
+                    <td style="font-size: 0;"><img src="WIP.png" alt="" onclick="buyCoinUpgrade('damage')"></td>
+                    <td style="font-size: 0;"><img src="WIP.png" alt="" onclick="buyCoinUpgrade('strength')"></td>
+                    <td style="font-size: 0;"><img src="WIP.png" alt="" onclick="buyCoinUpgrade('health')"></td>
+                    <td style="font-size: 0;"><img src="WIP.png" alt="" onclick="buyCoinUpgrade('defense')"></td>
+                    <td style="font-size: 0;"><img src="WIP.png" alt="" onclick="buyCoinUpgrade('resistance')"></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 0;"><img src="WIP.png" alt="" onclick="buyCoinUpgrade('cchance')"></td>
+                    <td style="font-size: 0;"><img src="WIP.png" alt="" onclick="buyCoinUpgrade('cdamage')"></td>
+                    <td style="font-size: 0;"><img src="WIP.png" alt="" onclick="buyCoinUpgrade('exp')"></td>
+                    <td style="font-size: 0;"><img src="WIP.png" alt="" onclick="buyCoinUpgrade('coin')"></td>
+                    <td style="font-size: 0;"><img src="WIP.png" alt="" onclick="buyCoinUpgrade('damage')"></td>
+                </tr>
+            </table>
+            <div id="coinUpgradeUI" class="upgradePortion">
+                <p id="coinUpgradeName" style="color: gold">---</p>
+                <p id="coinUpgradeDescription" style="color: white">---</p>
+                <p id="coinUpgradeLevel" style="color: white">---</p>
+                <p id="coinUpgradeCost" style="color: blue">---</p>
+                <p id="coinUpgradeCanBuy" style="color: crimson">---</p>
+            </div>
+        <link rel="stylesheet" href="fighter.css">
+    </main>
+</html>
+
